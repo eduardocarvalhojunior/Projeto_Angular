@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
   templateUrl: './product-create.component.html',
   styleUrls: ['./product-create.component.css']
 })
+
+
 export class ProductCreateComponent implements OnInit {
 
   product: Product = {
@@ -15,11 +17,14 @@ export class ProductCreateComponent implements OnInit {
     price: 125.98
   }
 
+
   constructor(private productService: ProductService, private router: Router) { }
+
 
   ngOnInit(): void {
     
   }
+
 
   createProduct(): void {
     this.productService.create(this.product).subscribe(() => {
@@ -28,7 +33,9 @@ export class ProductCreateComponent implements OnInit {
 
    
   }
+
   cancel(): void {
     this.router.navigate(['/product'])
+    
   }
 }
