@@ -21,7 +21,6 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HttpClientModule } from '@angular/common/http';
-
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -52,6 +51,9 @@ import { MatInputModule } from '@angular/material/input';
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
+
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
